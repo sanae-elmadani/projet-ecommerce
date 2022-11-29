@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="config-server" />
+        <module name="springadmin (2)" />
+        <module name="mproduits" />
+        <module name="apiGateway" />
+        <module name="client" />
+        <module name="mpaiement" />
+        <module name="clientui" />
+        <module name="springadmin" />
+        <module name="mcommandes" />
+        <module name="eureka-server" />
+        <module name="demo" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ApiGateway" target="1.8" />
+      <module name="client" target="1.8" />
+      <module name="demo" target="1.5" />
+      <module name="springadmin (1)" target="1.8" />
+      <module name="springadmin (2)" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ApiGateway" options="-parameters" />
+      <module name="apiGateway" options="-parameters" />
+      <module name="clientui" options="-parameters" />
+      <module name="config-server" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
+      <module name="mcommandes" options="-parameters" />
+      <module name="mpaiement" options="-parameters" />
+      <module name="mproduits" options="-parameters" />
+      <module name="springadmin" options="-parameters" />
+      <module name="springadmin (1)" options="-parameters" />
+    </option>
+  </component>
+</project>

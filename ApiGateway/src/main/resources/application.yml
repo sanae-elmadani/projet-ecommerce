@@ -1,0 +1,42 @@
+server:
+  port: 9999
+
+spring:
+  cloud:
+    discovery:
+      enabled: true
+    gateway:
+      routes:
+        - id: microservice-produits
+          uri: http://localhost:9001
+          predicates:
+            - Path=/MICROSERVICE-PRODUITS/**
+          filters:
+            - RewritePath=/MICROSERVICE-PRODUITS/(?<segment>/?.*),/$\{segment}
+            - name: CircuitBreaker
+              args:
+                name: fallbackcmd
+                fallbackUri: forward:/fallback
+
+  application:
+    name: API-Gateway
+
+  main:
+    web-application-type : reactive
+
+#Spring Security
+  security:
+     user:
+       name : utilisateur
+       password : mdp
+
+
+#eureka server location
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9102/eureka/
+
+
+
+
