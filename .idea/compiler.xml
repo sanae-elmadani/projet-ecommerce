@@ -18,10 +18,10 @@
         <module name="mcommandes" />
         <module name="eureka-server" />
         <module name="demo" />
+        <module name="ApiGateway" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="ApiGateway" target="1.8" />
       <module name="client" target="1.8" />
       <module name="demo" target="1.5" />
       <module name="springadmin (1)" target="1.8" />

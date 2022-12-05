@@ -12,6 +12,9 @@
         <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
         <option value="$USER_HOME$/Downloads/ApiGateway/pom.xml" />
         <option value="$USER_HOME$/Downloads/springadmin/pom.xml" />
+        <option value="$PROJECT_DIR$/ApiGateway/pom.xml" />
+        <option value="$PROJECT_DIR$/clientui/pom.xml" />
+        <option value="$PROJECT_DIR$/springadmin/pom.xml" />
       </list>
     </option>
   </component>

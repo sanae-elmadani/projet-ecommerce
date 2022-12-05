@@ -20,7 +20,7 @@ public class FallbackController {
     public ResponseEntity<Object> fallback() {
         Map<String, Object> response = new HashMap<>();
         response.put("timestamp", LocalDateTime.now());
-        response.put("message", "Gateway Timeout!");
+        response.put("message", "server product is down up!");
         return new ResponseEntity<>(
                 response,
                 HttpStatus.GATEWAY_TIMEOUT
